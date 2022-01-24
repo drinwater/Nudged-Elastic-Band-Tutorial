@@ -20,4 +20,4 @@ To overcome this, we use the Climbing Image-NEB method. Here, one single image i
 
 A successful CI-NEB run would look liek this:
 
-![Picture2](https://user-images.githubusercontent.com/97717818/150759303-ad95f39a-3a7a-42c8-a495-b22b5d22e64b.png)
+![Picture2](https://user-images.githubusercontent.com/97717818/150759808-ce092e86-46cd-4821-8152-5e93854bf2c1.png)

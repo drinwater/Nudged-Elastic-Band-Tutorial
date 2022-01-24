@@ -12,7 +12,7 @@ We use NEB runs to find the transition state of a reaction pathway. We start wit
 
 At this point, a standard NEB run would output an NEB band of for example, an N2O bond dissociation on a Pt (100) surface scenario, might look like this:
 
-![NEB run](C:\Users\12269\Downloads\Picture1.png)
+![Picture1](https://user-images.githubusercontent.com/97717818/150759260-808f9c90-c2c8-4703-817d-5cffe4634e89.png)
 
 The issue here is there is no one specific image that seems to correspond to the transition state, because a TS would be a saddle point in a band like this.
 
@@ -20,4 +20,4 @@ To overcome this, we use the Climbing Image-NEB method. Here, one single image i
 
 A successful CI-NEB run would look liek this:
 
-![CI-NEB run](C:\Users\12269\Downloads\Picture2.png)
+![Picture2](https://user-images.githubusercontent.com/97717818/150759303-ad95f39a-3a7a-42c8-a495-b22b5d22e64b.png)

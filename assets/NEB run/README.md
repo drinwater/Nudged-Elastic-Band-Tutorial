@@ -56,11 +56,17 @@ we can visualize each of the images using the Atomic Simulation Environment (ASE
 
 
 ```from ase.visualize import view```
+
 ```from ase.io.pov import write_pov```
+
 ```from ase.io.vasp import read_vasp```
+
 ```for i in range(7):```
+
 ```    atoms = read_vasp('./0'+str(i)+'/CONTCAR')```
+
 ```    view(atoms,viewer='x3d')```
+
 ```   write_pov('atoms_0'+str(i)+'.pov',atoms)```
 
 You can then use povray to convert the generated .ini files to high quality .pngs.

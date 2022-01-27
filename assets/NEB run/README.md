@@ -49,3 +49,23 @@ Once the run is complete and VASP has exited without errors, we can go ahead and
 ![Picture2](https://user-images.githubusercontent.com/97717818/150759808-ce092e86-46cd-4821-8152-5e93854bf2c1.png)
 
 We now see two peaks and need to confirm the first peak is the TS using vibrational frequency calculations.
+
+## Visualization
+
+we can visualize each of the images using the Atomic Simulation Environment (ASE) Python library..You can make uswe of this IPython script here:
+
+<code>
+from ase.visualize import view <br>
+from ase.io.pov import write_pov <br>
+from ase.io.vasp import read_vasp <br>
+for i in range(7): <br>
+&nbsp&nbsp&nbsp&nbsp    atoms = read_vasp('./0'+str(i)+'/CONTCAR') <br>
+&nbsp&nbsp&nbsp&nbsp    view(atoms,viewer='x3d') <br>
+&nbsp&nbsp&nbsp&nbsp    write_pov('atoms_0'+str(i)+'.pov',atoms) <br>
+</code>
+
+You can then use povray to convert the generated .ini files to high quality .pngs.
+
+```$ for i in {0..6}; do povray atoms_0$i.ini; done```
+
+You can then stitch together the generated .pngs into a gif:

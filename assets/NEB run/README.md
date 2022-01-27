@@ -54,20 +54,15 @@ We now see two peaks and need to confirm the first peak is the TS using vibratio
 
 we can visualize each of the images using the Atomic Simulation Environment (ASE) Python library..You can make uswe of this IPython script here:
 
-
-```from ase.visualize import view```
-
-```from ase.io.pov import write_pov```
-
-```from ase.io.vasp import read_vasp```
-
-```for i in range(7):```
-
-```    atoms = read_vasp('./0'+str(i)+'/CONTCAR')```
-
-```    view(atoms,viewer='x3d')```
-
-```   write_pov('atoms_0'+str(i)+'.pov',atoms)```
+<pre>
+from ase.visualize import view<br>
+from ase.io.pov import write_pov<br>
+from ase.io.vasp import read_vasp<br>
+for i in range(7): <br>
+&emsp;&emsp;&emsp;&emsp;atoms = read_vasp('./0'+str(i)+'/CONTCAR') <br>
+&emsp;&emsp;&emsp;&emsp;view(atoms,viewer='x3d') <br>
+&emsp;&emsp;&emsp;&emsp;write_pov('./0'+str(i)+'/CONTCAR',atoms)
+</pre>
 
 You can then use povray to convert the generated .ini files to high quality .pngs.
 

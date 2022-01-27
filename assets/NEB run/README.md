@@ -69,3 +69,5 @@ You can then use povray to convert the generated .ini files to high quality .png
 ```$ for i in {0..6}; do povray atoms_0$i.ini; done```
 
 You can then stitch together the generated .pngs into a gif:
+
+![NEB](https://user-images.githubusercontent.com/97717818/151387937-8b3cd4c9-713e-4414-b58f-51fdec896d94.gif)

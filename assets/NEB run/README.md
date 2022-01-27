@@ -54,7 +54,7 @@ We now see two peaks and need to confirm the first peak is the TS using vibratio
 
 we can visualize each of the images using the Atomic Simulation Environment (ASE) Python library..You can make uswe of this IPython script here:
 
-<code>
+
 ```from ase.visualize import view```
 ```from ase.io.pov import write_pov```
 ```from ase.io.vasp import read_vasp```

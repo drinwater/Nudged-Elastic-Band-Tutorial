@@ -23,3 +23,5 @@ A successful CI-NEB run would generate an NEB band like this:
 ![Picture2](https://user-images.githubusercontent.com/97717818/150759808-ce092e86-46cd-4821-8152-5e93854bf2c1.png)
 
 In this case, there appear to be two saddle points. To confirm which one is the TS, we conduct vibrational frequency calculations at the two images. A TS has exactly one imaginary frequency, so that would be a indicator of which of the two saddle points is the real TS.
+
+Head on over to the ```assets``` directory for the next steps of this tutorial.

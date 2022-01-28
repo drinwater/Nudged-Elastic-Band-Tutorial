@@ -10,7 +10,7 @@ I decided to put together a simple template for VASP, which includes NEB runs us
 
 We use NEB runs to find the transition state and energy barrier of a reaction pathway. We start with an initial and final state and choose how many points("images") in the pathway we would like to calculate. We interpolate between the points to give us a good initial guess, and run a standard VASP run in the same directory as all our NEB files albeit with a few modificiations to the INCAR input file.
 
-An NEB band of for example, an N2O bond dissociation on a Pt (111) surface scenario, might look like this:
+An NEB band of for example, an N2O bond dissociation on a Pd (111) surface scenario, might look like this:
 
 ![Picture1](https://user-images.githubusercontent.com/97717818/150759260-808f9c90-c2c8-4703-817d-5cffe4634e89.png)
 

@@ -32,7 +32,7 @@ Interpolate between the endpoints using the ```nebmake.pl``` script from the VTS
 
 ```$ nebmake.pl 00/POSCAR 06/POSCAR 5```
 
-Set up the KPOINTS file as usual, make sure to generate the POTCAR file. Generate the INCAR file as usual, albeit with a few additions. Set ```LCLIMB = .TRUE.``` to turn on the Climbing Image NEB method. Set ```IOPT = 3``` to use the force-based QM optimizer tht comes with the VTST version of VASP. Set ```TIMESTEP = 0.1```, ```IMAGES = 5```, ```IBRION = 3```, ```POTIM = 0.0``` and ```SPRING = -5```.
+Set up the KPOINTS file as usual, make sure to generate the POTCAR file. Generate the INCAR file as usual, albeit with a few additions. Set ```LCLIMB = .TRUE.``` to turn on the Climbing Image NEB method. Set ```IOPT = 3``` to use the force-based QM optimizer that comes with the VTST version of VASP. Set ```TIMESTEP = 0.1```, ```IMAGES = 5```, ```IBRION = 3```, ```POTIM = 0.0``` and ```SPRING = -5```.
 
 Run VASP as usual in the NEB home directory.
 
@@ -61,7 +61,7 @@ from ase.io.vasp import read_vasp<br>
 for i in range(7): <br>
 &emsp;&emsp;&emsp;&emsp;atoms = read_vasp('./0'+str(i)+'/CONTCAR') <br>
 &emsp;&emsp;&emsp;&emsp;view(atoms,viewer='x3d') <br>
-&emsp;&emsp;&emsp;&emsp;write_pov('./0'+str(i)+'/CONTCAR',atoms)
+&emsp;&emsp;&emsp;&emsp;write_pov('./0'+str(i)+'.pov',atoms)
 </pre>
 
 You can then use povray to convert the generated .ini files to high quality .pngs.

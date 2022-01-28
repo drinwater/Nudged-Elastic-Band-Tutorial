@@ -61,7 +61,7 @@ from ase.io.vasp import read_vasp<br>
 for i in range(7): <br>
 &emsp;&emsp;&emsp;&emsp;atoms = read_vasp('./0'+str(i)+'/CONTCAR') <br>
 &emsp;&emsp;&emsp;&emsp;view(atoms,viewer='x3d') <br>
-&emsp;&emsp;&emsp;&emsp;write_pov('./0'+str(i)+'.pov',atoms)
+&emsp;&emsp;&emsp;&emsp;write_pov('atoms_0'+str(i)+'.pov',atoms)
 </pre>
 
 You can then use povray to convert the generated .ini files to high quality .pngs.

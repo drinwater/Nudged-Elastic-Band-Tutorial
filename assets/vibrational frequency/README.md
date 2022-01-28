@@ -24,7 +24,7 @@ The output should look like this for image 2 for our example:
 8 f/i=    0.357185 THz     2.244261 2PiTHz   11.914417 cm-1     1.477200 meV  
 9 f/i=   16.513405 THz   103.756781 2PiTHz  550.827867 cm-1    68.293976 meV
 
-and for image 4:
+and for image 5:
 
 >1 f  =   68.720092 THz   431.781073 2PiTHz 2292.255466 cm-1   284.203559 meV  
 2 f  =   13.824517 THz    86.862000 2PiTHz  461.136224 cm-1    57.173626 meV  
